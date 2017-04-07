@@ -13,6 +13,7 @@ var stringifyJSON = function(obj) {
 	  return '"' + obj + '"';
 	}
 	
+	
 	else if (Array.isArray(obj)) {
 	  return '[' + obj.map(function(item) {
 	    return stringifyJSON(item);
